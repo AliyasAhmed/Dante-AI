@@ -344,7 +344,7 @@ if __name__ == "__main__":
                 os.startfile(musicpath)
                 continue
             
-            elif 'search on youtube' in query.lower():
+            elif 'search youtube' in query.lower():
                 say('What do you want to play on Youtube, sir?')
                 video_query = asyncio.run(takecommand()).lower()
                 
