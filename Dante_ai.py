@@ -13,6 +13,7 @@ import json
 import time
 import asyncio
 import random
+import api
 
 def ai(prompt):
     
@@ -213,7 +214,7 @@ async def weather(api_key, query):
         error_message = "Failed to fetch weather information."
         print(error_message)  # Print error message to console
         say(error_message)    # Speak error message
-api_key = "a72621f1af436dc2df8bf9c917c8f1c7"
+api_key = api.api_key
 
 
 async def News(query):
