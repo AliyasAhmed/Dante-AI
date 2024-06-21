@@ -142,16 +142,21 @@ async def takecommand():
     with sr.Microphone() as source:
         # r.pause_threshold = 0.5
         # r.non_speaking_duration = 0.1
-        audio = r.listen(source)
-        
         
         
         try:
+            audio = r.listen(source, timeout=5, phrase_time_limit=5)
+        
+        
             query = await asyncio.to_thread(r.recognize_google, audio) 
             # query = r.recognize_google(audio) 
             
             print(f"User said: {query}")
             return query
+        except sr.WaitTimeoutError:
+            # Timeout waiting for speech
+            print("Listening timed out while waiting for phrase to start.")
+            return ""
             
         except sr.UnknownValueError:
             # No speech detected
@@ -164,7 +169,7 @@ async def takecommand():
             logging.error(error_message)
             say(error_message)
             return False
-        
+
 def play_music(music_folder):
 
     music_files = os.listdir(music_folder)
