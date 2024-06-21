@@ -221,7 +221,7 @@ async def News(query):
     
     today = time.strftime("%Y-%M-%D")
 
-    url = f"https://newsapi.org/v2/everything?q={query}&from={today}&sortBy=publishedAt&apiKey=7372e7bba2a04aea97e51090acc7a08d"
+    url = f"https://newsapi.org/v2/everything?q={query}&from={today}&sortBy=publishedAt&apiKey={api_key}"
     r = requests.get(url)
     
     news = json.loads(r.text)
@@ -236,7 +236,7 @@ async def News(query):
     else:
         print(f"Failed to fetch news. Status code: {r.status_code}")
         print(r.text)
-        
+api_key = api.api_news
 async def functions():
     task = asyncio.create_task(News(query))
 
