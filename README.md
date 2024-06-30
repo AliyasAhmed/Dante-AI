@@ -1,7 +1,8 @@
-This is Your Personal desktop assistant.
-We can minimize all windows at once just by saying "minimize.".
-We can play any video on YouTube without opening YouTube by just saying "search YouTube.".
-We can also search anything on Google by saying "search Google.".
-We can close all the sites that we opened with the help of this assistant.
-We can check the weather, news, and time by saying these words.
-We can take screenshot, we can stop and play youtube Videos
+Your very own desktop helper is this.
+All windows can be minimised simultaneously by just stating "minimise."
+Just saying "search YouTube." will allow us to play any video on YouTube without even having to access the website.
+Saying "search Google." allows us to look up anything on the internet as well.
+With this helper, we can shut down every website we launched.
+By saying these words, we can find out the time, the weather, and the news.
+We can pause, take a screenshot, and play YouTube videos.
+
