@@ -18,7 +18,7 @@ import api
 def ai(prompt):
     
     
-    genai.configure(api_key="AIzaSyD67fjOt_IrXQuTlSF0QzcwFzCCHswrPL4")
+    genai.configure(api_key="xxx")
 
     # text = f"AI response for Prompt :{prompt} \n ************* \n\n"
     
@@ -72,7 +72,7 @@ def chat(query):
     global chat_str
     if 'chat_str' not in globals():
         chat_str = ""
-    genai.configure(api_key="AIzaSyD67fjOt_IrXQuTlSF0QzcwFzCCHswrPL4")
+    genai.configure(api_key="xxx")
 
     try:
         generation_config = {
